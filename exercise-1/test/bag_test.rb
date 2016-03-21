@@ -3,6 +3,7 @@ require 'minitest/autorun'
 require 'minitest/pride'
 require_relative '../lib/bag'
 require_relative '../lib/candy'
+require 'pry'
 
 class BagTest < Minitest::Test
   def test_a_new_bag_is_empty
@@ -18,10 +19,11 @@ class BagTest < Minitest::Test
   end
 
   def test_put_candy_in_the_bag
-    skip
+    skip 
     bag = Bag.new
     candy = Candy.new("Sour frogs")
     bag << candy
+    # binding.pry
     assert_equal [candy], bag.candies
   end
 

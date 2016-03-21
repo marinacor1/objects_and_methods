@@ -1,15 +1,18 @@
-class Bag
+require 'pry'
+class Bag < Array
+  attr_accessor :candies, :array
 
-  def empty?
-    true
+  def initialize
+    @candies = []
   end
 
-  def count
-    0
-  end
+end
 
-  def candies
-    []
+
+class Candy
+
+  def initialize(candy_type = "cheese")
+    @candy = candy_type
   end
 
 end
