@@ -8,4 +8,8 @@ class Bag
     0
   end
 
+  def candies
+    []
+  end
+
 end
